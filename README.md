@@ -1,6 +1,7 @@
 # python-pyd-proxy
 
 This project shows how to proxy and wrap functions in a `.pyd` file to intercept and view their behavior without altering the `main` application.
+> `.pyd` is python code compiled using Cython (translated to C/C++ code) <- this make reverse engineering on `.pyd` is hard.
 
 
 
@@ -30,7 +31,7 @@ In this proof-of-concept, we are working with a number guessing game where the a
 
 - `0-original-code`
   
-  - Contains the original source code of `main.py` (number guessing game) and `brain.py` before compilation
+  - Contains the original source code of `main.py` (number guessing game), `brain.py` before compilation and `setup.py` script to compile `brain.py` to `.pyd`
     
 - `1-original-build`
   
